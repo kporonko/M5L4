@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
 import UserComponent from "./components/UserComponent";
-import {IUserData} from "./interfaces/IUserData";
-import {getUser, getUsersList} from "./Queries/queries";
+import ResourceComponent from "./components/ResourceComponent";
+import ListComponent from "./components/ListComponent";
 
 
 function App() {
   return (
     <div className="App">
       <UserComponent/>
+      <ResourceComponent/>
+      <ListComponent/>
     </div>
   );
 }
