@@ -21,8 +21,7 @@ export async function getUser(): Promise<IUserData> {
     );
 }
 
-export async function getUsersList(): Promise<IUserData[]> {
-    debugger
+export async function getUsersList(): Promise<IUser[]> {
     const result: Response = await fetch(`https://reqres.in/api/users?page=2`);
     const body = await result.json();
 

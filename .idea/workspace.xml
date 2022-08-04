@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="User get query fully done">
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/ResourceComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/IResource.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/IResourceData.tsx" afterDir="false" />
+    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="List users query almost implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/reportWebVitals.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/setupTests.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +57,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Учеба\A-LEVEL\.NET C#\M5L4HW\M5L4\app\my-app" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -79,7 +87,7 @@
       <updated>1659622278637</updated>
       <workItem from="1659622279876" duration="103000" />
       <workItem from="1659622455644" duration="98000" />
-      <workItem from="1659623174321" duration="11822000" />
+      <workItem from="1659623174321" duration="16309000" />
     </task>
     <task id="LOCAL-00001" summary="User get query is implemented. Doesn`t work">
       <created>1659625836879</created>
@@ -102,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659634831847</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="List users query almost implemented">
+      <created>1659637905714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659637905714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +138,7 @@
     <MESSAGE value="User get query is implemented. Doesn`t work" />
     <MESSAGE value="User get query is emplemented" />
     <MESSAGE value="User get query fully done" />
-    <option name="LAST_COMMIT_MESSAGE" value="User get query fully done" />
+    <MESSAGE value="List users query almost implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="List users query almost implemented" />
   </component>
 </project>
