@@ -3,17 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.main-div{
-    background-color: #61dafb;
-    margin: 2% 2%;
-    border-radius: 30px;
-    overflow: hidden;
-}
-.main-h1{
-    font-size: 66px;
-    background-color: blue;
-}
-ul{
-    text-decoration: none;
-    font-size: 28px;
+.center{
+    margin: auto;
+    width: 20%;
 }

@@ -1,30 +1,51 @@
 import React, {useEffect, useState} from 'react';
-import queries from "../Queries/queries";
+import {getUser} from "../Queries/queries";
 import {IUser} from "../interfaces/IUser";
 import './UserComponent.css'
+import {
+    MDBCard,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText,
+    MDBCardImage,
+    MDBBtn,
+    MDBRipple
+} from 'mdb-react-ui-kit';
 
 const UserComponent = () => {
     let [user, setUser] = useState<IUser[]>([])
     useEffect(()=>{
         async function init(){
-            let userQuery = await queries();
+            let userQuery = await getUser();
             setUser([userQuery.data])
         }
         init();
     }, []);
     return (
-        <div className="main-div">
-            <h1 className="main-h1">User</h1>
+        <div>
             {user.map(item => (
-                <ul>
-                    <li>Id: {item.id}</li>
-                    <li>Email: {item.email}</li>
-                    <li>First name: {item.first_name}</li>
-                    <li>Last name: {item.last_name}</li>
-                    <li>Avatar: {item.url_avatar}</li>
-                </ul>
+                <div className="center">
+                    Single User Query
+                    <MDBCard>
+                        <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
+                            <MDBCardImage className={item.avatar} src={item.avatar} position='top' alt='...'/>
+                            <a>
+                                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}>
+
+                                </div>
+                            </a>
+                        </MDBRipple>
+                        <MDBCardBody>
+                            <MDBCardTitle>User</MDBCardTitle>
+                            <MDBCardText>
+                                {item.id}) {item.first_name} {item.last_name} {item.email}
+                            </MDBCardText>
+                        </MDBCardBody>
+                    </MDBCard>
+                </div>
             ))}
         </div>
+
     );
 };
 
