@@ -15,9 +15,10 @@ import {IUser} from "../interfaces/IUser";
 
 const ListComponent = () => {
     let [user, setUser] = useState<IUser[]>([])
-    const deleteUser: (ev: React.MouseEvent<HTMLButtonElement>, index: number) => void = (ev, index) =>{
+    const deleteUser = (user:IUser) =>{
+        debugger
         setUser(prevUser => {
-            prevUser.splice(index, 1);
+            prevUser.splice(prevUser.indexOf(user), 1);
             return [...prevUser]
         })
     }
@@ -34,16 +35,14 @@ const ListComponent = () => {
         <div>
             List Users Query
             {user.map(item => (
-                <div className="center" onClick={function(ev){
-                    deleteUser
-                }}>
+                <div key={item.id} className="center">
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                            <MDBCardImage className={item.avatar} src={item.avatar} position='top' alt='...'/>
+                            <MDBCardImage className={item.avatar} src={item.avatar} position='top'/>
                                 <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}>
                                 </div>
                         </MDBRipple>
-                        <MDBCardBody>
+                        <MDBCardBody onClick={()=>deleteUser(item)}>
                             <MDBCardTitle>User</MDBCardTitle>
                             <MDBCardText>
                                 {item.id} {item.first_name} {item.last_name} {item.email}
