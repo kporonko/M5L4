@@ -1,21 +1,29 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import queries from "../Queries/queries";
 import {IUser} from "../interfaces/IUser";
+import './UserComponent.css'
 
-
-const UserComponent = async () => {
-    // const [user, setUser] = React.useState<IUser[]>([]);
-    let user = await queries();
-
+const UserComponent = () => {
+    let [user, setUser] = useState<IUser[]>([])
+    useEffect(()=>{
+        async function init(){
+            let userQuery = await queries();
+            setUser([userQuery.data])
+        }
+        init();
+    }, []);
     return (
-        <div>
-            <ul>
-                <li>Id: {user.data.id}</li>
-                <li>Email: {user.data.email}</li>
-                <li>First name: {user.data.first_name}</li>
-                <li>Last name: {user.data.last_name}</li>
-                <li>Avatar: {user.data.url_avatar}</li>
-            </ul>
+        <div className="main-div">
+            <h1 className="main-h1">User</h1>
+            {user.map(item => (
+                <ul>
+                    <li>Id: {item.id}</li>
+                    <li>Email: {item.email}</li>
+                    <li>First name: {item.first_name}</li>
+                    <li>Last name: {item.last_name}</li>
+                    <li>Avatar: {item.url_avatar}</li>
+                </ul>
+            ))}
         </div>
     );
 };
