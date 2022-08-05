@@ -22,9 +22,9 @@ const LoginComponent = () => {
     }, []);
     return (
         <div>
+            <h1 className="Header">Login</h1>
             {login.map(item => (
                 <div className="center">
-                    Login
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <a>

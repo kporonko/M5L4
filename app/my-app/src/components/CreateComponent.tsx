@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {create, getUser} from "../Queries/queries";
 import {IUser} from "../interfaces/IUser";
-import './UserComponent.css'
+import './Styles.css'
 import {
     MDBCard,
     MDBCardBody,
@@ -24,9 +24,9 @@ const CreateComponent = () => {
     }, []);
     return (
         <div>
+            <h1 className="Header">Create</h1>
             {createe.map(item => (
                 <div key={item.id} className="center">
-                    Create
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <a>

@@ -47,24 +47,26 @@ const ListComponent = () => {
     }, []);
     return (
         <div>
-            List Users Query
-            {users.map(item => (
-                <div key={item.id} className="center">
-                    <MDBCard>
-                        <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                            <MDBCardImage className={item.avatar} src={item.avatar} position='top'/>
+            <h1 className="Header">List Users Query</h1>
+            <div className="flex-div">
+                {users.map(item => (
+                    <div key={item.id} className="center">
+                        <MDBCard>
+                            <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
+                                <MDBCardImage className={item.avatar} src={item.avatar} position='top'/>
                                 <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}>
                                 </div>
-                        </MDBRipple>
-                        <MDBCardBody onClick={()=>deleteUser(item)}>
-                            <MDBCardTitle>User</MDBCardTitle>
-                            <MDBCardText>
-                                {item.id} {item.first_name} {item.last_name} {item.email}
-                            </MDBCardText>
-                        </MDBCardBody>
-                    </MDBCard>
-                </div>
-            ))}
+                            </MDBRipple>
+                            <MDBCardBody onClick={()=>deleteUser(item)}>
+                                <MDBCardTitle>User</MDBCardTitle>
+                                <MDBCardText>
+                                    {item.id} {item.first_name} {item.last_name} {item.email}
+                                </MDBCardText>
+                            </MDBCardBody>
+                        </MDBCard>
+                    </div>
+                ))}
+            </div>
         </div>
 
     );

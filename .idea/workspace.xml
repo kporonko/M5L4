@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Updates and delete functions are implemented. Fixed">
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/LoginComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/RegistrationComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/ILogin.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/IRegister.tsx" afterDir="false" />
+    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Functionality is implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/CreateComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/CreateComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/DeleteComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/DeleteComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListResourceComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListResourceComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/LoginComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/LoginComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/RegistrationComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/RegistrationComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ResourceComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ResourceComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/UpdateComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/UpdateComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/UserComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/Styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/UserComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/UserComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659727615314</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Functionality is implemented">
+      <created>1659731466946</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659731466946</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +179,7 @@
     <MESSAGE value="Try to do deleting user. It deletes 2 users instead of 1" />
     <MESSAGE value="Resources list is implemented" />
     <MESSAGE value="Updates and delete functions are implemented. Fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates and delete functions are implemented. Fixed" />
+    <MESSAGE value="Functionality is implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functionality is implemented" />
   </component>
 </project>

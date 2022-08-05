@@ -3,7 +3,7 @@ import {getComponent} from "../Queries/queries";
 import {IResourceData} from "../interfaces/IResourceData";
 
 import {IUser} from "../interfaces/IUser";
-import './UserComponent.css'
+import './Styles.css'
 import {
     MDBCard,
     MDBCardBody,
@@ -26,9 +26,9 @@ const UserComponent = () => {
     }, []);
     return (
         <div>
+            <h1 className="Header">Single Resource Query</h1>
             {user.map(item => (
                 <div className="center">
-                    Single Resource Query
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <a>

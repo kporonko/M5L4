@@ -23,9 +23,9 @@ const RegistrationComponent = () => {
     }, []);
     return (
         <div>
+            <h1 className="Header">Register</h1>
             {register.map(item => (
                 <div key={item.id} className="center">
-                    Register
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <a>

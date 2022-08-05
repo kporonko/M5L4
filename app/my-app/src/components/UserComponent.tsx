@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {getUser} from "../Queries/queries";
 import {IUser} from "../interfaces/IUser";
-import './UserComponent.css'
+import './Styles.css'
 import {
     MDBCard,
     MDBCardBody,
@@ -23,9 +23,9 @@ const UserComponent = () => {
     }, []);
     return (
         <div>
+            <h1 className="Header">Single User Query</h1>
             {user.map(item => (
                 <div className="center">
-                    Single User Query
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <MDBCardImage className={item.avatar} src={item.avatar} position='top' alt='...'/>

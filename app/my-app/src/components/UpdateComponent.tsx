@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {create, getUser, update} from "../Queries/queries";
 import {IUser} from "../interfaces/IUser";
-import './UserComponent.css'
+import './Styles.css'
 import {
     MDBCard,
     MDBCardBody,
@@ -28,9 +28,9 @@ const UpdateComponent = (props:Props) => {
     }, []);
     return (
         <div>
+            <h1 className="Header">Update with <code>{props.method}</code></h1>
             {updatee.map(item => (
                 <div key={Math.random()*100} className="center">
-                    Update {props.method}
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
                             <a>

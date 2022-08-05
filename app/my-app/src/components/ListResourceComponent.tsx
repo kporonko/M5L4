@@ -31,25 +31,27 @@ const ListResourceComponent = () => {
     }, []);
     return (
         <div>
-            List Users Query
-            {resources.map(item => (
-                <div key={item.id} className="center">
-                    <MDBCard>
-                        <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                            <a>
-                                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}>
-                                </div>
-                            </a>
-                        </MDBRipple>
-                        <MDBCardBody>
-                            <MDBCardTitle>Resource</MDBCardTitle>
-                            <MDBCardText>
-                                {item.id}) {item.name} {item.year} {item.color} {item.pantone_value}
-                            </MDBCardText>
-                        </MDBCardBody>
-                    </MDBCard>
-                </div>
-            ))}
+            <h1 className="Header">List Resources</h1>
+            <div className="flex-div">
+                {resources.map(item => (
+                    <div key={item.id} className="center">
+                        <MDBCard>
+                            <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
+                                <a>
+                                    <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}>
+                                    </div>
+                                </a>
+                            </MDBRipple>
+                            <MDBCardBody>
+                                <MDBCardTitle>Resource</MDBCardTitle>
+                                <MDBCardText>
+                                    {item.id}) {item.name} {item.year} {item.color} {item.pantone_value}
+                                </MDBCardText>
+                            </MDBCardBody>
+                        </MDBCard>
+                    </div>
+                ))}
+            </div>
         </div>
 
     );

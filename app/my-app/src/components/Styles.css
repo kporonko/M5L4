@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+.center{
+    margin: auto;
+    width: 20%;
+}
+.Header{
+    background-color: black;
+    color: white;
+    padding: 20px 10px;
+    margin: 20px 0px;
+}
+.flex-div{
+    margin: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    flex-wrap: wrap;
+    align-content: end;
+}

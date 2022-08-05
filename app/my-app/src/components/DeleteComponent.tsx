@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {create, deleteUser, getUser} from "../Queries/queries";
-import './UserComponent.css'
+import './Styles.css'
 import {IDelete} from "../interfaces/IDelete";
 
 const DeleteComponent = () => {
@@ -14,8 +14,9 @@ const DeleteComponent = () => {
     }, []);
     return (
         <div>
+            <h1 className="Header">Deleted?</h1>
             <div style={{padding: '20px', backgroundColor:'grey'}} className="center">
-                Deleted? {deletee}
+                Code: {deletee}
             </div>
         </div>
 
