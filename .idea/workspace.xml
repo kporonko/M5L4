@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Try to do deleting user. It deletes 2 users instead of 1">
+    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Try to fix delete">
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/ListResourceComponent.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Учеба/A-LEVEL/.NET C#/M5L4HW/M5L4",
+    "last_opened_file_path": "D:/Учеба/projects/TRYREACT/myapp-ts",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

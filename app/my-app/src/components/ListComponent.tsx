@@ -17,7 +17,6 @@ import {debug} from "util";
 const ListComponent = () => {
     let [users, setUsers] = useState<IUser[]>([])
     function deleteUser (user:IUser) {
-
         setUsers(prevUsers => {
         console.log(prevUsers)
         console.log(users)

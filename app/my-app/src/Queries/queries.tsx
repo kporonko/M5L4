@@ -54,4 +54,21 @@ export async function getComponent(): Promise<IResourceData> {
         castedBody
     );
 }
+export async function getResourcesList(): Promise<IResource[]> {
+    const result: Response = await fetch(`https://reqres.in/api/unknown`);
+    console.log(result)
+    const body = await result.json();
 
+    console.log("Body Response: ");
+    console.log(body);
+
+    const castedBody = body.data;
+
+    console.log("CastedBody Response: ");
+    console.log(castedBody);
+
+    return (
+        castedBody
+    );
+}
+export default getUser();
