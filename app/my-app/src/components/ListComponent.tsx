@@ -10,31 +10,46 @@ import {
     MDBRipple
 } from 'mdb-react-ui-kit';
 import {IUser} from "../interfaces/IUser";
+import {debug} from "util";
 
 
 
 const ListComponent = () => {
-    let [user, setUser] = useState<IUser[]>([])
-    const deleteUser = (user:IUser) =>{
-        debugger
-        setUser(prevUser => {
-            prevUser.splice(prevUser.indexOf(user), 1);
-            return [...prevUser]
+    let [users, setUsers] = useState<IUser[]>([])
+    function deleteUser (user:IUser) {
+
+        setUsers(prevUsers => {
+        console.log(prevUsers)
+        console.log(users)
+        prevUsers.splice(prevUsers.indexOf(user), 1);
+        console.log(prevUsers)
+        console.log(users)
+        return [...prevUsers]
         })
+
+        // console.log(users)
+        // users.splice(users.indexOf(user), 1);
+        // console.log(users)
+        // debugger
+        // setUsers(
+        //     users
+        // )
     }
     useEffect(()=>{
         async function init(){
             let userQuery = await getUsersList();
             console.log("userQuery");
             console.log(userQuery);
-            setUser(userQuery);
+            console.log(users)
+            setUsers(userQuery);
+            console.log(users)
         }
         init();
     }, []);
     return (
         <div>
             List Users Query
-            {user.map(item => (
+            {users.map(item => (
                 <div key={item.id} className="center">
                     <MDBCard>
                         <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>

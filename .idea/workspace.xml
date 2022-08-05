@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Try to do deleting user">
+    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Try to do deleting user. It deletes 2 users instead of 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" afterDir="false" />
     </list>
@@ -79,7 +79,7 @@
       <updated>1659622278637</updated>
       <workItem from="1659622279876" duration="103000" />
       <workItem from="1659622455644" duration="98000" />
-      <workItem from="1659623174321" duration="17666000" />
+      <workItem from="1659623174321" duration="19726000" />
     </task>
     <task id="LOCAL-00001" summary="User get query is implemented. Doesn`t work">
       <created>1659625836879</created>
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659642284379</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Try to do deleting user. It deletes 2 users instead of 1">
+      <created>1659643673667</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659643673667</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +146,7 @@
     <MESSAGE value="User get query fully done" />
     <MESSAGE value="List users query almost implemented" />
     <MESSAGE value="Try to do deleting user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to do deleting user" />
+    <MESSAGE value="Try to do deleting user. It deletes 2 users instead of 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to do deleting user. It deletes 2 users instead of 1" />
   </component>
 </project>
