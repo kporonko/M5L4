@@ -6,6 +6,8 @@ import {IResourceData} from "../interfaces/IResourceData";
 import {ICreate} from "../interfaces/ICreate";
 import {IUpdate} from "../interfaces/IUpdate";
 import {IDelete} from "../interfaces/IDelete";
+import {IRegister} from "../interfaces/IRegister";
+import {ILogin} from "../interfaces/ILogin";
 
 export async function getUser(): Promise<IUserData> {
     const result: Response = await fetch(`https://reqres.in/api/users/2`);
@@ -132,4 +134,41 @@ export async function deleteUser(): Promise<number> {
     );
 }
 
+
+export async function registerUser(): Promise<IRegister> {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: 'eve.holt@reqres.in', password: 'pistol' })
+    };
+    const result: Response = await fetch(`https://reqres.in/api/register`, requestOptions);
+    console.log(result)
+    const body = await result.json();
+
+    console.log("Body Response: ");
+    console.log(body);
+
+
+    return (
+        body
+    );
+}
+export async function loginUser(): Promise<ILogin> {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: 'eve.holt@reqres.in', password: 'cityslicka' })
+    };
+    const result: Response = await fetch(`https://reqres.in/api/login`, requestOptions);
+    console.log(result)
+    const body = await result.json();
+
+    console.log("Body Response: ");
+    console.log(body);
+
+
+    return (
+        body
+    );
+}
 export default getUser();
