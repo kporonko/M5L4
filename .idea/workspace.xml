@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Try to fix delete">
-      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/ListResourceComponent.tsx" afterDir="false" />
+    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Resources list is implemented">
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/CreateComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/DeleteComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/UpdateComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/ICreate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/IDelete.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/IUpdate.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/interfaces/IResource.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/interfaces/IResource.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659643673667</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Resources list is implemented">
+      <created>1659723953093</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659723953093</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +162,7 @@
     <MESSAGE value="List users query almost implemented" />
     <MESSAGE value="Try to do deleting user" />
     <MESSAGE value="Try to do deleting user. It deletes 2 users instead of 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Try to do deleting user. It deletes 2 users instead of 1" />
+    <MESSAGE value="Resources list is implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resources list is implemented" />
   </component>
 </project>

@@ -3,6 +3,9 @@ import React from "react";
 import {IUser} from "../interfaces/IUser";
 import {IResource} from "../interfaces/IResource";
 import {IResourceData} from "../interfaces/IResourceData";
+import {ICreate} from "../interfaces/ICreate";
+import {IUpdate} from "../interfaces/IUpdate";
+import {IDelete} from "../interfaces/IDelete";
 
 export async function getUser(): Promise<IUserData> {
     const result: Response = await fetch(`https://reqres.in/api/users/2`);
@@ -71,4 +74,62 @@ export async function getResourcesList(): Promise<IResource[]> {
         castedBody
     );
 }
+
+export async function create(): Promise<ICreate> {
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: 'morpheus', job: 'leader' })
+    };
+    const result: Response = await fetch(`https://reqres.in/api/users`, requestOptions);
+    console.log(result)
+    const body = await result.json();
+
+    console.log("Body Response: ");
+    console.log(body);
+
+    const castedBody = body;
+
+    console.log("CastedBody Response: ");
+    console.log(castedBody);
+
+    return (
+        castedBody
+    );
+}
+
+export async function update(props:string): Promise<IUpdate> {
+    const requestOptions = {
+        method: props,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: 'morpheus', job: 'zion president' })
+    };
+    const result: Response = await fetch(`https://reqres.in/api/users/2`, requestOptions);
+    console.log(result)
+    const body = await result.json();
+
+    console.log("Body Response: ");
+    console.log(body);
+
+    const castedBody = body;
+
+    console.log("CastedBody Response: ");
+    console.log(castedBody);
+
+    return (
+        castedBody
+    );
+}
+
+
+
+export async function deleteUser(): Promise<number> {
+    const result: Response = await fetch(`https://reqres.in/api/users/2`, {method:'DELETE'});
+    console.log(result)
+
+    return (
+        result.status
+    );
+}
+
 export default getUser();

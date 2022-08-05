@@ -1,9 +1,10 @@
 import React from "react";
 
 export interface IResource {
-    name: string;
-    id: number;
-    year: number;
-    color: string;
-    pantone_value: string;
+    name?: string;
+    id?: number;
+    year?: number;
+    color?: string;
+    pantone_value?: string;
+    children?: JSX.Element|JSX.Element[];
 }
