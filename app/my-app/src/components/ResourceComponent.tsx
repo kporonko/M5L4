@@ -14,37 +14,30 @@ import {
     MDBRipple
 } from 'mdb-react-ui-kit';
 import {IResource} from "../interfaces/IResource";
+import ResourceCard from "./ResourceCard";
+import Empty from "./Empty";
+import UserCard from "./UserCard";
 
 const UserComponent = () => {
     let [user, setUser] = useState<IResource[]>([])
     useEffect(()=>{
         async function init(){
             let userQuery = await getComponent();
-            setUser([userQuery.data])
+
+            if (Object.keys(userQuery).length !== 0)
+                setUser([userQuery.data])
+            {console.log(Object.keys(userQuery).length === 0)}
         }
         init();
     }, []);
     return (
         <div>
             <h1 className="Header">Single Resource Query</h1>
-            {user.map(item => (
                 <div className="center">
-                    <MDBCard>
-                        <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                            <a>
-                                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}>
-                                </div>
-                            </a>
-                        </MDBRipple>
-                        <MDBCardBody>
-                            <MDBCardTitle>Resource</MDBCardTitle>
-                            <MDBCardText>
-                                {item.id}) {item.name} {item.year} {item.color} {item.pantone_value}
-                            </MDBCardText>
-                        </MDBCardBody>
-                    </MDBCard>
+                    {Object.keys(user).length === 0 ? <Empty/> :
+                        <ResourceCard item={user[0]}/>
+                    }
                 </div>
-            ))}
         </div>
 
     );

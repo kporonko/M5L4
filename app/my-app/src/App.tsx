@@ -16,14 +16,14 @@ function App() {
     <div className="App">
       <UserComponent/>
       <ResourceComponent/>
-      <ListComponent/>
-      <ListResourceComponent/>
-      <CreateComponent/>
-      <UpdateComponent method={"PUT"}/>
-      <UpdateComponent method={"PATCH"}/>
-      <DeleteComponent/>
-      <RegistrationComponent/>
-      <LoginComponent/>
+      {/*<ListComponent/>*/}
+      {/*<ListResourceComponent/>*/}
+      {/*<CreateComponent/>*/}
+      {/*<UpdateComponent method={"PUT"}/>*/}
+      {/*<UpdateComponent method={"PATCH"}/>*/}
+      {/*<DeleteComponent/>*/}
+      {/*<RegistrationComponent/>*/}
+      {/*<LoginComponent/>*/}
     </div>
   );
 }

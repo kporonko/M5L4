@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="Functionality is implemented">
+    <list default="true" id="b8819d0f-f9b0-4bf4-909a-502f65af3a49" name="Changes" comment="CSS small fix">
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/Empty.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/ResourceCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/my-app/src/components/UserCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/CreateComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/CreateComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/DeleteComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/DeleteComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ListResourceComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ListResourceComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/LoginComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/LoginComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/RegistrationComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/RegistrationComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/Queries/queries.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/components/ResourceComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/ResourceComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/UpdateComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/UpdateComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my-app/src/components/UserComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/Styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/my-app/src/components/UserComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/my-app/src/components/UserComponent.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Учеба/projects/TRYREACT/myapp-ts",
+    "last_opened_file_path": "D:/Учеба/projects/PortfolioReact",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -153,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659731466946</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="CSS small fix">
+      <created>1659732710730</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1659732710730</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +184,7 @@
     <MESSAGE value="Resources list is implemented" />
     <MESSAGE value="Updates and delete functions are implemented. Fixed" />
     <MESSAGE value="Functionality is implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functionality is implemented" />
+    <MESSAGE value="CSS small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS small fix" />
   </component>
 </project>

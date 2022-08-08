@@ -10,7 +10,7 @@ import {IRegister} from "../interfaces/IRegister";
 import {ILogin} from "../interfaces/ILogin";
 
 export async function getUser(): Promise<IUserData> {
-    const result: Response = await fetch(`https://reqres.in/api/users/2`);
+    const result: Response = await fetch(`https://reqres.in/api/users/23`);
     const body = await result.json();
 
     console.log("Body Response: ");

@@ -11,39 +11,29 @@ import {
     MDBBtn,
     MDBRipple
 } from 'mdb-react-ui-kit';
+import Empty from "./Empty";
+import {map} from "react-bootstrap/ElementChildren";
+import DeleteComponent from "./DeleteComponent";
+import UserCard from "./UserCard";
 
 const UserComponent = () => {
     let [user, setUser] = useState<IUser[]>([])
     useEffect(()=>{
         async function init(){
             let userQuery = await getUser();
-            setUser([userQuery.data])
+            console.log(userQuery)
+            if (Object.keys(userQuery).length !== 0)
+                setUser([userQuery.data])
+            {console.log(Object.keys(userQuery).length === 0)}
         }
         init();
     }, []);
     return (
         <div>
             <h1 className="Header">Single User Query</h1>
-            {user.map(item => (
-                <div className="center">
-                    <MDBCard>
-                        <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay'>
-                            <MDBCardImage className={item.avatar} src={item.avatar} position='top' alt='...'/>
-                            <a>
-                                <div className="mask" style={{ backgroundColor: 'rgba(251, 251, 251, 0.15)' }}>
-
-                                </div>
-                            </a>
-                        </MDBRipple>
-                        <MDBCardBody>
-                            <MDBCardTitle>User</MDBCardTitle>
-                            <MDBCardText>
-                                {item.id}) {item.first_name} {item.last_name} {item.email}
-                            </MDBCardText>
-                        </MDBCardBody>
-                    </MDBCard>
-                </div>
-            ))}
+            {Object.keys(user).length === 0 ? <Empty/> :
+                <UserCard item={user[0]}/>
+            }
         </div>
 
     );
